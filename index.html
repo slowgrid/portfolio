@@ -126,7 +126,6 @@
               <p class="section-label">02 / SELECTED WORK</p>
               <h2>해결한 문제와 선택의 과정</h2>
             </div>
-            <p>로컬 도구부터 AI 경로 탐색까지,<br />직접 구현한 프로젝트입니다.</p>
           </div>
 
           <div class="project-list">
@@ -155,28 +154,58 @@
               </button>
             </div>
 
-            <a class="project-row reveal" href="https://github.com/EST-AI-Challengers-BestDriver/EcoRoute" target="_blank" rel="noreferrer">
+            <a
+              class="project-row reveal"
+              href="https://github.com/EST-AI-Challengers-BestDriver/EcoRoute"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div class="project-number">02</div>
+            
               <div class="project-title">
-                <p>AI ROUTING DEMO</p>
+                <p>AI ROUTING · TEAM PROJECT</p>
                 <h3>EcoRoute</h3>
               </div>
+            
               <div class="project-copy">
-                <p>DNN으로 후보 경로의 에너지 소비량과 CO₂ 배출량을 예측해 친환경 경로를 제안하는 시스템입니다.</p>
-                <ul class="project-tags" aria-label="사용 기술">
-                  <li>Python</li><li>PyTorch</li><li>NetworkX</li>
+                <p>
+                  ESTsoft AI Challengers 최종 해커톤에서 진행한 팀 프로젝트로,
+                  시간대별 교통, 도로, 차량 조건을 바탕으로 DNN이 후보 경로의
+                  에너지 소비량을 추론하고 CO₂ 배출량을 비교해
+                  저탄소 경로를 추천하는 웹 서비스입니다.
+                </p>
+            
+                <div class="project-role">
+                  <span class="project-role-label">
+                    MY ROLE · FRONTEND / BACKEND
+                  </span>
+            
+                  <p>
+                    학습된 DNN 모델을 웹에서 사용할 수 있도록 서비스로 통합했습니다. 
+                    Leaflet 기반 지도에서 출발지/도착지와 차량, 시간 조건을 입력하는 UI를 구현하고, 
+                    입력값을 백엔드 API로 전달해 
+                    경로 탐색 및 모델 추론 결과를 받아 시각화하는 전체 흐름을 구현했습니다.
+                  </p>
+                </div>
+            
+                <ul class="project-tags" aria-label="EcoRoute에서 사용한 기술">
+                  <li>Python</li>
+                  <li>JavaScript</li>
+                  <li>Leaflet</li>
+                  <li>PyTorch</li>
                 </ul>
               </div>
+            
               <span class="project-arrow" aria-hidden="true">↗</span>
             </a>
             <div class="project-gallery reveal" data-count="3" aria-label="EcoRoute 화면">
               <button class="gallery-item" type="button" data-src="/projects/ecoroute-results.png" data-caption="후보 경로별 시간·거리·탄소 배출량 비교">
                 <img src="/projects/ecoroute-results.png" alt="EcoRoute가 네 가지 후보 경로의 예상 시간, 거리, 탄소 배출량을 비교하는 화면" loading="lazy" />
-                <span>후보 경로별 시간·거리·탄소 배출량 비교</span>
+                <span>후보 경로별 시간, 거리, 탄소 배출량 비교</span>
               </button>
               <button class="gallery-item" type="button" data-src="/projects/ecoroute-form.png" data-caption="출발지·도착지와 차량 조건 설정">
                 <img src="/projects/ecoroute-form.png" alt="EcoRoute에서 출발지, 도착지, 시간과 차량 종류를 선택하는 화면" loading="lazy" />
-                <span>출발지·도착지와 차량 조건 설정</span>
+                <span>출발지/도착지와 차량 조건 설정</span>
               </button>
               <button class="gallery-item" type="button" data-src="/projects/ecoroute-cover.png" data-caption="EcoRoute 시작 화면">
                 <img src="/projects/ecoroute-cover.png" alt="EcoRoute 저탄소 경로 탐색 서비스의 시작 화면" loading="lazy" />
