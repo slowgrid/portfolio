@@ -1095,3 +1095,27 @@ p {
     transform: none;
   }
 }
+
+.project-role {
+  max-width: 500px;
+  margin: 0 0 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.project-role-label {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--accent);
+  font: 500 9px/1.4 var(--mono);
+  letter-spacing: .08em;
+}
+
+.project-role p {
+  margin: 0;
+
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.75;
+}
