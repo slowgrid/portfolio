@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite';
 import { sites } from '@openai/sites-vite-plugin';
+import { existsSync } from 'node:fs';
 
 export default defineConfig({
-  plugins: [
+  plugins: existsSync(new URL('./.openai/hosting.json', import.meta.url)) ? [
     sites(),
     {
       name: 'static-sites-worker',
@@ -26,5 +27,5 @@ export default defineConfig({
         });
       },
     },
-  ],
+  ] : [],
 });
